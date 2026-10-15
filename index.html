@@ -133,6 +133,9 @@ section{padding:88px 0}
 .ba figure + figure figcaption{background:var(--red)}
 .ba h3{font-size:19px;padding:16px 18px}
 @media (max-width:760px){.ba-grid{grid-template-columns:1fr}}
+.ba.wide{grid-column:1/-1}
+.ba.wide img{aspect-ratio:4/3}
+@media (max-width:600px){.ba.wide .ba-pair{grid-template-columns:1fr}}
 .wow{text-align:center;margin-top:44px;font-family:var(--slab);font-weight:900;font-size:clamp(22px,3vw,30px);color:var(--ink)}
 .wow em{font-style:normal;color:var(--red)}
 
@@ -309,6 +312,48 @@ footer a{color:#b9bcc2}
   <div class="wrap">
     <div class="intro">
       <div class="eyebrow">Recent Work</div>
+      <h2>Before &amp; after: whole-home makeover</h2>
+      <p>A dated ranch home refreshed inside and out: new exterior color, a kitchen with painted white cabinets, granite counters and tile backsplash, new flooring and paint throughout, and an updated hall bath.</p>
+    </div>
+    <div class="ba-grid">
+      <div class="ba wide">
+        <div class="ba-pair">
+          <figure><img src="images/home-exterior-before.jpg" alt="Ranch home with tan siding and brick accents before the update" loading="lazy"><figcaption>Before</figcaption></figure>
+          <figure><img src="images/home-exterior-after.jpg" alt="Same home with new gray siding color and white garage doors" loading="lazy"><figcaption>After</figcaption></figure>
+        </div>
+        <h3>Exterior</h3>
+      </div>
+      <div class="ba wide">
+        <div class="ba-pair">
+          <figure><img src="images/home-kitchen-before.jpg" alt="Kitchen with oak cabinets, laminate counters and vinyl floor" loading="lazy"><figcaption>Before</figcaption></figure>
+          <figure><img src="images/home-kitchen-after.jpg" alt="Kitchen with white cabinets, dark granite counters, tile backsplash and stainless appliances" loading="lazy"><figcaption>After</figcaption></figure>
+        </div>
+        <h3>Kitchen</h3>
+      </div>
+      <div class="ba wide">
+        <div class="ba-pair">
+          <figure><img src="images/home-kitchen2-before.jpg" alt="Oak wall cabinets and plain counter beside laundry door" loading="lazy"><figcaption>Before</figcaption></figure>
+          <figure><img src="images/home-kitchen2-after.jpg" alt="White cabinets with black hardware, granite counters and patterned tile backsplash" loading="lazy"><figcaption>After</figcaption></figure>
+        </div>
+        <h3>Kitchen cabinets &amp; backsplash</h3>
+      </div>
+      <div class="ba wide">
+        <div class="ba-pair">
+          <figure><img src="images/home-living-before.jpg" alt="Living room with purple walls and oak trim" loading="lazy"><figcaption>Before</figcaption></figure>
+          <figure><img src="images/home-living-after.jpg" alt="Living room with gray walls, white trim, dark plank flooring and painted tray ceiling" loading="lazy"><figcaption>After</figcaption></figure>
+        </div>
+        <h3>Living room</h3>
+      </div>
+      <div class="ba wide">
+        <div class="ba-pair">
+          <figure><img src="images/home-bath-before.jpg" alt="Bathroom with fiberglass tub surround and dated vanity" loading="lazy"><figcaption>Before</figcaption></figure>
+          <figure><img src="images/home-bath-after.jpg" alt="Bathroom with new tub, white tile surround with shelf, gray cabinetry and plank flooring" loading="lazy"><figcaption>After</figcaption></figure>
+        </div>
+        <h3>Hall bath</h3>
+      </div>
+    </div>
+
+    <div class="intro" style="margin-top:72px">
       <h2>Before &amp; after: basement finish</h2>
       <p>An unfinished basement turned into finished living space: framing, drywall, paint, luxury vinyl plank flooring, carpeted stairs, new doors and trim.</p>
     </div>
