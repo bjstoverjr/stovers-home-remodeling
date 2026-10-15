@@ -131,11 +131,14 @@ section{padding:88px 0}
 .ba img{width:100%;aspect-ratio:3/4;object-fit:cover}
 .ba figcaption{position:absolute;top:10px;left:10px;font-family:var(--cond);font-weight:700;font-size:14px;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:3px;background:var(--ink);color:#fff}
 .ba figure + figure figcaption{background:var(--red)}
+.ba img{object-position:center}
 .ba h3{font-size:19px;padding:16px 18px}
 @media (max-width:760px){.ba-grid{grid-template-columns:1fr}}
 .ba.wide{grid-column:1/-1}
 .ba.wide img{aspect-ratio:4/3}
-@media (max-width:600px){.ba.wide .ba-pair{grid-template-columns:1fr}}
+.ba.trio .ba-pair{grid-template-columns:repeat(3,1fr)}
+.ba.trio img{aspect-ratio:3/4}
+@media (max-width:600px){.ba.wide .ba-pair{grid-template-columns:1fr}.ba.trio img{aspect-ratio:4/3}}
 .wow{text-align:center;margin-top:44px;font-family:var(--slab);font-weight:900;font-size:clamp(22px,3vw,30px);color:var(--ink)}
 .wow em{font-style:normal;color:var(--red)}
 
@@ -313,22 +316,22 @@ footer a{color:#b9bcc2}
     <div class="intro">
       <div class="eyebrow">Recent Work</div>
       <h2>Before &amp; after: whole-home makeover</h2>
-      <p>A dated ranch home refreshed inside and out: new exterior color, a kitchen with painted white cabinets, granite counters and tile backsplash, new flooring and paint throughout, and an updated hall bath.</p>
+      <p>A dated ranch home updated inside and out: exterior paint, a kitchen remodel with painted white cabinets, granite counters and tile backsplash, new flooring, paint and fireplace mantel in the living room, and two full bathroom remodels.</p>
     </div>
     <div class="ba-grid">
       <div class="ba wide">
         <div class="ba-pair">
-          <figure><img src="images/home-exterior-before.jpg" alt="Ranch home with tan siding and brick accents before the update" loading="lazy"><figcaption>Before</figcaption></figure>
-          <figure><img src="images/home-exterior-after.jpg" alt="Same home with new gray siding color and white garage doors" loading="lazy"><figcaption>After</figcaption></figure>
+          <figure><img src="images/home-exterior-before.jpg" alt="Ranch home with tan siding and brick accents before painting" loading="lazy"><figcaption>Before</figcaption></figure>
+          <figure><img src="images/home-exterior-after.jpg" alt="Same home painted gray with white garage doors" loading="lazy"><figcaption>After</figcaption></figure>
         </div>
-        <h3>Exterior</h3>
+        <h3>Exterior paint</h3>
       </div>
       <div class="ba wide">
         <div class="ba-pair">
           <figure><img src="images/home-kitchen-before.jpg" alt="Kitchen with oak cabinets, laminate counters and vinyl floor" loading="lazy"><figcaption>Before</figcaption></figure>
           <figure><img src="images/home-kitchen-after.jpg" alt="Kitchen with white cabinets, dark granite counters, tile backsplash and stainless appliances" loading="lazy"><figcaption>After</figcaption></figure>
         </div>
-        <h3>Kitchen</h3>
+        <h3>Kitchen remodel</h3>
       </div>
       <div class="ba wide">
         <div class="ba-pair">
@@ -339,17 +342,33 @@ footer a{color:#b9bcc2}
       </div>
       <div class="ba wide">
         <div class="ba-pair">
-          <figure><img src="images/home-living-before.jpg" alt="Living room with purple walls and oak trim" loading="lazy"><figcaption>Before</figcaption></figure>
+          <figure><img src="images/home-living-before.jpg" alt="Living room with purple walls, oak trim and wood floor" loading="lazy"><figcaption>Before</figcaption></figure>
           <figure><img src="images/home-living-after.jpg" alt="Living room with gray walls, white trim, dark plank flooring and painted tray ceiling" loading="lazy"><figcaption>After</figcaption></figure>
         </div>
         <h3>Living room</h3>
       </div>
       <div class="ba wide">
         <div class="ba-pair">
-          <figure><img src="images/home-bath-before.jpg" alt="Bathroom with fiberglass tub surround and dated vanity" loading="lazy"><figcaption>Before</figcaption></figure>
-          <figure><img src="images/home-bath-after.jpg" alt="Bathroom with new tub, white tile surround with shelf, gray cabinetry and plank flooring" loading="lazy"><figcaption>After</figcaption></figure>
+          <figure><img src="images/home-living2-before.jpg" alt="Living room with oak fireplace mantel and purple walls" loading="lazy"><figcaption>Before</figcaption></figure>
+          <figure><img src="images/home-living2-after.jpg" alt="Living room with white fireplace mantel, gray walls and dark plank flooring" loading="lazy"><figcaption>After</figcaption></figure>
         </div>
-        <h3>Hall bath</h3>
+        <h3>Living room &amp; fireplace</h3>
+      </div>
+      <div class="ba wide trio">
+        <div class="ba-pair">
+          <figure><img src="images/home-mbath-before.jpg" alt="Primary bath with cultured marble double vanity and small shower" loading="lazy"><figcaption>Before</figcaption></figure>
+          <figure><img src="images/home-mbath-after-vanity.jpg" alt="New gray vanity with quartz top and undermount sink" loading="lazy"><figcaption>After: vanity</figcaption></figure>
+          <figure><img src="images/home-mbath-after-shower.jpg" alt="New tiled walk-in shower with glass doors and plank flooring" loading="lazy"><figcaption>After: shower</figcaption></figure>
+        </div>
+        <h3>Primary bath remodel</h3>
+      </div>
+      <div class="ba wide trio">
+        <div class="ba-pair">
+          <figure><img src="images/home-bath-before.jpg" alt="Hall bath with fiberglass tub surround and dated vanity" loading="lazy"><figcaption>Before</figcaption></figure>
+          <figure><img src="images/home-bath-after-vanity.jpg" alt="New gray vanity, medicine cabinet and fixtures" loading="lazy"><figcaption>After: vanity</figcaption></figure>
+          <figure><img src="images/home-bath-after.jpg" alt="New tub with white tile surround and built-in shelf" loading="lazy"><figcaption>After: tub</figcaption></figure>
+        </div>
+        <h3>Hall bath remodel</h3>
       </div>
     </div>
 
