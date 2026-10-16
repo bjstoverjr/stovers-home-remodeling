@@ -170,7 +170,7 @@ footer a{color:#b9bcc2}
 /* hero */
 .hero{position:relative;background:var(--ink);color:#fff;overflow:hidden;padding:0}
 .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 60%;max-width:none}
-.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(14,15,17,.94) 0%,rgba(14,15,17,.82) 45%,rgba(14,15,17,.45) 100%)}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(14,15,17,.92) 0%,rgba(14,15,17,.72) 42%,rgba(14,15,17,.18) 100%)}
 .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:120px;z-index:1;background:linear-gradient(0deg,rgba(14,15,17,.7),transparent)}
 .hero .wrap.hero-in{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding-top:96px;padding-bottom:104px}
 .hero h1{color:#fff;font-size:clamp(38px,5.4vw,64px);font-weight:900;margin:16px 0 18px;letter-spacing:-.01em}
@@ -277,3 +277,12 @@ footer a{color:#b9bcc2}
 .btn-dark{background:var(--ink);color:#fff}
 .btn-dark:hover{background:#000}
 .photo-note{text-align:center;font-size:13.5px;color:#7d8087;margin-top:10px}
+
+/* phone hero: show the full house as a clear photo band, text below */
+@media (max-width:900px){
+  .hero::before,.hero::after{display:none}
+  .hero-bg{position:relative;inset:auto;display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:center 55%;
+    -webkit-mask-image:linear-gradient(180deg,#000 72%,transparent 100%);mask-image:linear-gradient(180deg,#000 72%,transparent 100%)}
+  .hero .wrap.hero-in{margin-top:-28px;padding-top:0;padding-bottom:48px}
+  .path{background:var(--char-2)}
+}
