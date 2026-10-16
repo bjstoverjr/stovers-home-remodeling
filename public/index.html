@@ -156,6 +156,27 @@ section{padding:88px 0}
 .towns li{font-family:var(--cond);font-weight:600;font-size:17px;letter-spacing:.04em;background:var(--paper);border:1px solid #dddcd7;border-radius:30px;padding:6px 16px}
 .area-note{margin-top:22px;color:#55585e}
 
+/* reviews */
+.reviews{background:var(--paper)}
+.rv-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:36px}
+.rv-head h2{margin-bottom:0}
+.rv-score{display:flex;align-items:center;gap:10px;font-family:var(--cond);font-weight:600;font-size:17px;color:#55585e}
+.rv-score b{font-family:var(--slab);font-weight:900;font-size:36px;color:var(--ink)}
+.rv-stars{display:flex;gap:2px;color:#f5b301}
+.rv-stars svg{width:20px;height:20px}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rv{background:#fff;border:1px solid #e1e0dc;border-radius:6px;padding:26px 24px;display:flex;flex-direction:column;gap:12px}
+.rv h3{font-size:18px}
+.rv blockquote{font-size:17px;color:var(--text);flex:1}
+.rv figcaption{display:flex;align-items:center;gap:10px;border-top:1px solid #ecebe7;padding-top:14px}
+.rv-av{width:36px;height:36px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-family:var(--slab);font-weight:900}
+.rv figcaption b{font-family:var(--cond);font-size:18px;letter-spacing:.03em;color:var(--ink)}
+.rv-src{margin-left:auto;font-size:13px;color:#8a8d93}
+.rv-more{margin-top:24px;text-align:center}
+.rv-more a{font-family:var(--cond);font-weight:700;font-size:18px;letter-spacing:.05em;text-transform:uppercase;color:var(--red);text-decoration:none}
+.rv-more a:hover{text-decoration:underline}
+@media (max-width:900px){.rv-grid{grid-template-columns:1fr}}
+
 /* contact */
 .contact{background:var(--ink);color:#fff;text-align:center}
 .contact h2{color:#fff}
@@ -198,6 +219,7 @@ footer a{color:#b9bcc2}
       <li><a href="#services">Services</a></li>
       <li><a href="#restoration">Restoration</a></li>
       <li><a href="#work">Our&nbsp;Work</a></li>
+      <li><a href="#reviews">Reviews</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -432,6 +454,36 @@ footer a{color:#b9bcc2}
       <li>Blue Springs</li><li>Kansas City, MO</li><li>Kansas City, KS</li><li>Independence</li><li>Lee's Summit</li><li>Grain Valley</li><li>Oak Grove</li><li>Raytown</li><li>Grandview</li><li>Belton</li><li>Raymore</li><li>Liberty</li><li>Gladstone</li><li>North Kansas City</li><li>Overland Park</li><li>Olathe</li><li>Lenexa</li><li>Shawnee</li><li>Leawood</li>
     </ul>
     <p class="area-note">Don't see your town? Give us a call. If you're within about 50 miles of downtown KC, we can probably help.</p>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="rv-head">
+      <div>
+        <div class="eyebrow">Reviews</div>
+        <h2>What customers say</h2>
+      </div>
+      <div class="rv-score"><b>5.0</b><div class="rv-stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></div><span>on Google</span></div>
+    </div>
+    <div class="rv-grid">
+      <figure class="rv">
+        <div class="rv-stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></div>
+        <blockquote>I have had Jason do work for myself along with several clients of mine. He has always been fair and reasonably priced. I will continue to use and recommend him to people</blockquote>
+        <figcaption><span class="rv-av">M</span><b>Mike C.</b><span class="rv-src">Google review</span></figcaption>
+      </figure>
+      <figure class="rv">
+        <div class="rv-stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></div>
+        <h3>Reasonable price</h3><blockquote>Jason is reliable, quick and does a quality job. If you&rsquo;re looking for home remodeling he&rsquo;s your man!</blockquote>
+        <figcaption><span class="rv-av">C</span><b>Cathy L.</b><span class="rv-src">Google review</span></figcaption>
+      </figure>
+      <figure class="rv">
+        <div class="rv-stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></div>
+        <blockquote>Have used Stover&rsquo;s Home Remodeling for a few jobs and now some bigger jobs. Always a 5 star job and always great to work with!</blockquote>
+        <figcaption><span class="rv-av">D</span><b>Dawn C.</b><span class="rv-src">Google review</span></figcaption>
+      </figure>
+    </div>
+    <p class="rv-more"><a href="https://www.google.com/search?q=Stover%27s+Home+Remodeling+Blue+Springs+reviews" target="_blank" rel="noopener">Read all reviews on Google &rarr;</a></p>
   </div>
 </section>
 
