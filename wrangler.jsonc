@@ -1,7 +1,11 @@
 {
   "name": "stovers-home-remodeling",
+  "main": "src/worker.js",
   "compatibility_date": "2026-10-01",
   "assets": {
-    "directory": "./public"
+    "directory": "./public",
+    "binding": "ASSETS"
   }
+  // After Email Routing is enabled and the destination address is verified, add:
+  // "send_email": [{ "name": "LEADS", "destination_address": "jasonwstover84@gmail.com" }]
 }
