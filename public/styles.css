@@ -270,3 +270,10 @@ footer a{color:#b9bcc2}
 .nav-links{gap:22px}
 @media (max-width:1120px){.nav-links{display:none}}
 @media (max-width:420px){.brand .mark{width:38px;height:38px;font-size:24px}}
+
+.est-status.send b{display:block;margin-bottom:4px}
+.send-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.send-btns .btn{padding:10px 18px;font-size:17px;color:#fff;text-decoration:none}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:#000}
+.photo-note{text-align:center;font-size:13.5px;color:#7d8087;margin-top:10px}

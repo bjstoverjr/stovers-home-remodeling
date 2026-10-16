@@ -317,6 +317,7 @@
       </div>
     </div>
     <p class="wow">From worn-out to <em>WOW</em>. We make it happen.</p>
+    <p class="photo-note">All project photos show work completed and photographed by Stover's Home Remodeling.</p>
   </div>
 </section>
 
@@ -489,8 +490,8 @@ document.getElementById('yr').textContent=new Date().getFullYear();
       })
       .catch(function(){
         var body=encodeURIComponent(summary(d));
-        st.className='est-status err';
-        st.innerHTML='We couldn\'t send that automatically. Tap to send it instead: <a href="mailto:jasonwstover84@gmail.com?subject=Estimate%20request&body='+body+'">Email it</a> or <a href="sms:+18169350961?&body='+body+'">Text it</a>, or call (816) 935-0961.';
+        st.className='est-status ok send';
+        st.innerHTML='<b>One more tap to send it to Jason.</b> Your details are filled in, just hit send:<span class="send-btns"><a class="btn btn-red" href="sms:+18169350961?&body='+body+'">Send by text</a><a class="btn btn-dark" href="mailto:jasonwstover84@gmail.com?subject=Estimate%20request&body='+body+'">Send by email</a></span>';
         btn.disabled=false; btn.textContent='Request my free estimate';
       });
   });
