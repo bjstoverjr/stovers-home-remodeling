@@ -308,3 +308,7 @@ footer a{color:#b9bcc2}
 .fb-link{display:inline-flex;align-items:center;gap:10px;margin-top:26px;color:#c8cace;text-decoration:none;font-family:var(--cond);font-weight:700;font-size:18px;letter-spacing:.04em;text-transform:uppercase}
 .fb-link svg{width:24px;height:24px;color:#4b8df8}
 .fb-link:hover{color:#fff}
+
+.emerg{display:flex;gap:12px;align-items:flex-start;background:rgba(201,32,43,.14);border:1px solid rgba(201,32,43,.5);border-radius:6px;padding:14px 16px;color:#f1f2f4!important;margin:4px 0 18px}
+.emerg svg{width:22px;height:22px;color:#ff6b74;flex:none;margin-top:2px}
+.emerg a{color:#fff;font-weight:600}
